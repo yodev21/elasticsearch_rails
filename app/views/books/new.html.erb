@@ -1,2 +1,6 @@
-<h1>Books#new</h1>
-<p>Find me in app/views/books/new.html.erb</p>
+<h1>新規作成</h1>
+<%= form_with model: @book, local: true do |f| %>
+  <%= f.text_field :title, placeholder: 'タイトル' %>
+  <%= f.text_field :content, placeholder: '内容' %>
+  <%= f.submit %>
+<% end %>
