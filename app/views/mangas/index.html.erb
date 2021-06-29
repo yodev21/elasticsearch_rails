@@ -33,14 +33,14 @@
     <tbody>
     <% @mangas.each do |manga| %>
       <tr>
-        <td><%= manga.publisher.name %></td>
-        <td><%= manga.category.name %></td>
-        <td><%= manga.author.name %></td>
+        <td><%= manga.publishers.name %></td>
+        <td><%= manga.categories.name %></td>
+        <td><%= manga.authors.name %></td>
         <td><%= manga.title %></td>
         <td><%= manga.description %></td>
       </tr>
     <% end %>
     </tbody>
   </table>
-  <%= paginate @mangas %>
+  
 </div>

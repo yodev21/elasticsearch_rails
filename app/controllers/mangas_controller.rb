@@ -1,10 +1,14 @@
 class MangasController < ApplicationController
   def index
-    @mangas = if query.present?
-                Manga.search(query).records
-              else
-                Manga.all
-              end
+    # @mangas = if query.present?
+    #             # Manga.search(query).records
+    #             Manga.search(query)
+    #             exit
+    #           else
+    #             Manga.search({})
+    #           end
+    @mangas = query.present? ? Manga.search(query).records : Manga.search({})
+    exit if query.present? && @mangas.first
   end
 
   private
