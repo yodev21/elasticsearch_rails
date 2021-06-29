@@ -19,6 +19,10 @@ gem 'devise'
 # bullet
 gem "bullet"
 
+# frontend
+gem "bulma-rails", "~> 0.7.2"
+gem 'kaminari'
+
 # Elasticsearch
 gem 'elasticsearch-model', git: 'git://github.com/elasticsearch/elasticsearch-rails.git'
 gem 'elasticsearch-rails', git: 'git://github.com/elasticsearch/elasticsearch-rails.git'
@@ -38,4 +42,7 @@ group :test do
   gem 'capybara', '>= 3.26'
   gem 'selenium-webdriver'
   gem 'webdrivers'
+  gem 'rspec-rails'
+  gem 'spring-commands-rspec'
+  gem 'factory_bot_rails'
 end
