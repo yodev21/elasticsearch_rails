@@ -1,11 +1,11 @@
 class Manga < ApplicationRecord
   include MangaSearch::Engine
+  include Elasticsearch::Model
 
   belongs_to :author
   belongs_to :publisher
   belongs_to :category
   
-  include Elasticsearch::Model
   # def search
   #   exit
   # end

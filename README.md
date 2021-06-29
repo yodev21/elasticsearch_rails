@@ -12,6 +12,9 @@ https://qiita.com/unum_penguin/items/83b647d1aedab7b6331a
 join datatype と nested datatype の比較
 https://developers.o-uccino.com/entry/2018/12/17/142025
 
+Elasticsearch で 1 対多のデータを入れる時
+https://qiita.com/s_nakamura/items/68925aaee96a90eb40e3
+
 # 備考
 
 ```test.erb

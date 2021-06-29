@@ -8,7 +8,7 @@ class MangasController < ApplicationController
     #             Manga.search({})
     #           end
     @mangas = query.present? ? Manga.search(query).records : Manga.search({})
-    exit if query.present? && @mangas.first
+    # exit if query.present? && @mangas.first
   end
 
   private
